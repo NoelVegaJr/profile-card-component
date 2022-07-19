@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.bg-top {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+.bg-bottom {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  transform: translate(50%, 50%);
+}
+
+.card {
+  width: 32rem;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-bg {
+  width: 100%;
+}
+
+.img-section {
+  position: relative;
+}
+
+.profile-img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  border-radius: 100%;
+  border: 5px solid #fff;
+}
+
+.card-body {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.bio {
+  text-align: center;
+}
+
+.user {
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.location {
+  font-size: 1.6rem;
+}
+
+.bio {
+  margin-bottom: 2rem;
+}
+
+.divider {
+  height: 0.1rem;
+  background-color: hsl(0, 0%, 91%);
+  margin: 2.4rem 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stat {
+  text-align: center;
+}
+
+.number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.category {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 376px) {
+  .bg-top,
+  .bg-bottom {
+    width: 200rem;
+    height: 200rem;
+  }
+}
